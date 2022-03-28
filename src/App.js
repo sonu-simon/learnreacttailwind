@@ -1,16 +1,12 @@
 import Card from "./components/Card";
 import Chips from "./components/Chips";
+import EventList from "./components/EventList";
 
 function App() {
   return (
     <div>
       <Chips />
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-2 justify-center">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div>
+      <EventList />
     </div>
   );
 }
