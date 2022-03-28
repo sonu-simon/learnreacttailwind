@@ -1,7 +1,6 @@
 import React from "react";
-import Chips from "./Chips";
 
-export default function Card({ name, job }) {
+export default function Card({ name }) {
   return (
     <div class="flex justify-center my-6 mx-8">
       <div class="rounded-lg shadow-lg bg-white max-w-sm">
@@ -13,7 +12,7 @@ export default function Card({ name, job }) {
           />
         </a>
         <div class="p-6">
-          <h5 class="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+          <h5 class="text-gray-900 text-xl font-medium mb-2">{name}</h5>
           <p class="text-gray-700 text-base mb-4">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
