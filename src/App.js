@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from "./components/Card";
+import Chips from "./components/Chips";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Chips />
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-2 justify-center">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
   );
 }
