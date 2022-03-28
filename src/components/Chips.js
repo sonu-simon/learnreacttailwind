@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import EventList from "./EventList";
 export default function Chips() {
   const [selected, setSelected] = useState("Cultural");
   const options = ["Workshop", "Expo", "Cultural", "Competition"];
   console.log(options);
   return (
+
+   <>
     <div class="flex flex-row justify-around mt-4">
       {options.map((option) => (
         <div
@@ -18,9 +21,17 @@ export default function Chips() {
         >
           <div class="flex-initial text-center max-w-sm leading-none text-md font-semibold">
             {option}
+           
           </div>
         </div>
       ))}
+
+
     </div>
+    
+    <EventList option={selected} />
+
+    </>
+    
   );
 }
